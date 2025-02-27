@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AssignLocationScreen">
+
+    <TextView
+        android:id="@+id/textview8"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="Assign Location"
+        android:textAllCaps="true"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/date_assign_operator"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="35dp"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:layout_marginEnd="240dp"-->
+    <!--        android:text=" Date :"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView3"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:layout_marginRight="240dp" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/tomrw_date"-->
+    <!--        android:layout_width="154dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:layout_marginEnd="30dp"-->
+    <!--        android:layout_marginRight="30dp"-->
+    <!--        android:autofillHints=""-->
+    <!--        android:clickable="false"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="date"-->
+    <!--        android:inputType="date"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.436"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/date_assign_operator"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView3" />-->
+    <TextView
+        android:id="@+id/veh_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:gravity="center"
+        android:text="Vehicle  :"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview8" />
+
+
+    <Spinner
+        android:id="@+id/vehicles_spinner1"
+        android:layout_width="140sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/veh_id"
+        app:layout_constraintTop_toBottomOf="@+id/textview8" />
+
+    <TextView
+        android:id="@+id/veh_loc_id"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:gravity="center"
+        android:text="Location  Intersection:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veh_id" />
+
+    <Spinner
+        android:id="@+id/location_spinner"
+        android:layout_width="140sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/veh_id"
+        app:layout_constraintTop_toBottomOf="@+id/vehicles_spinner1" />
+
+    <TextView
+        android:id="@+id/veh_loc_time_slot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:gravity="center"
+        android:text="Time Slot  :"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veh_loc_id" />
+
+
+    <Spinner
+        android:id="@+id/time_slot_spinner"
+        android:layout_width="140sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/veh_loc_time_slot"
+        app:layout_constraintTop_toBottomOf="@+id/location_spinner" />
+
+    <Button
+        android:id="@+id/assign_loc_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:text="Assign"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

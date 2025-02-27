@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Checkout">
+
+
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Payment Options"
+            android:textAllCaps="true"
+            android:textColor="#009688"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:fontFamily="sans-serif-condensed-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+            android:id="@+id/radio_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text">
+
+        <RadioButton
+                android:id="@+id/radio_amex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="American Express"
+                android:textSize="16sp"/>
+
+
+        <RadioButton
+                android:id="@+id/radio_visa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visa"
+                android:textSize="16sp"/>
+
+        <RadioButton
+                android:id="@+id/radio_Master"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Master Card"
+                android:textSize="16sp"/>
+
+        <RadioButton
+                android:id="@+id/radio_Discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover"
+                android:textSize="16sp"/>
+
+    </RadioGroup>
+
+    <com.braintreepayments.cardform.view.CardForm
+            android:id="@+id/card_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/radio_pay"
+            >
+
+
+        <Button
+                android:id="@+id/placeOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="Place Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </com.braintreepayments.cardform.view.CardForm>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

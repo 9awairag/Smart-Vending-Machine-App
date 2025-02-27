@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ViewOrders">
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Orders">
+
+
+        <TableRow
+            android:id="@+id/table_row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"
+            android:padding="8dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/ordersID"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Order ID"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/ordersLocation"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Location Intersection"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/ordersDate"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pickup Date and Time"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/ordersstatus"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:gravity="center"
+                android:textColor="#fff" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="#ff0000" />
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txt_Orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Your Orders"
+        android:textAllCaps="true"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

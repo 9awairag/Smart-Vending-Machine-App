@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ViewCart">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="609dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp"
+                        android:text="View Cart"
+                        android:textAllCaps="true"
+                        android:textColor="#009688"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        app:fontFamily="sans-serif-condensed-medium" />
+
+
+                <TextView
+                    android:id="@+id/vehicle_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="16dp"
+                    android:text="Vehicle : "
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/location_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="16dp"
+                    android:text="Location Intersection : "
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="16dp"
+                    android:text="Time Slot : "
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TableLayout
+                        android:id="@+id/table_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                    <TableRow
+                            android:id="@+id/table_row1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorBlack"
+                            android:padding="10dp">
+
+
+                        <TextView
+                                android:id="@+id/Sr_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="   Sr no."
+                                android:textColor="#fff" />
+
+                        <TextView
+                                android:id="@+id/Item_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Item Name"
+                                android:textColor="#fff" />
+
+                        <TextView
+                                android:id="@+id/Quan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:text="Quantity"
+                                android:textColor="#fff" />
+
+                        <TextView
+                                android:id="@+id/Total"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="          Total"
+                                android:textColor="#fff" />
+
+                    </TableRow>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dip"
+                            android:background="#FC2222" />
+                </TableLayout>
+
+                <TextView
+                        android:id="@+id/tax_amnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="                                                             Tax : $"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/grandTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="                                                 Grand Total : $"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                <Button
+                        android:id="@+id/checkout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:onClick="checkout"
+                        android:text="Checkout"
+                        android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat >

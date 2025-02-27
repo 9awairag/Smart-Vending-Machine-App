@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UserHomeScreen"
+        tools:layout_editor_absoluteY="89dp">
+
+    <TextView
+            android:id="@+id/user_welcome_msg"
+            android:layout_width="306dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="44dp"
+            android:text="   Welcome User"
+            android:textColor="#00574B"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+            android:id="@+id/user_search_vending_vehicle"
+            android:layout_width="306dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:text="Search Vending Vehicle "
+            android:textColor="#000105"
+            android:onClick="searchVendingVehicle"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_welcome_msg" />
+
+    <Button
+            android:id="@+id/user_view_orders"
+            android:layout_width="306dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:text="View Orders"
+            android:textColor="#000105"
+            android:onClick="viewOrders"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_search_vending_vehicle" />
+
+    <Button
+            android:id="@+id/user_view_profile"
+            android:layout_width="306dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:text="View Profile"
+            android:onClick="viewProfile"
+            android:textColor="#000105"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_view_orders" />
+
+    <Button
+            android:id="@+id/user_contact_us"
+            android:layout_width="306dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:text="Contact Us"
+            android:textColor="#000105"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_view_profile"
+            tools:ignore="MissingConstraints"
+            android:onClick="contactUs"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

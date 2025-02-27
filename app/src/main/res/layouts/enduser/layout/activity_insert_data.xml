@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="190dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/registration_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="                      REGISTRATION"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#009688"
+                    android:textSize="22sp"
+                    android:typeface="serif"
+                    android:textAllCaps="true"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="bold" />
+
+
+            <EditText
+                    android:id="@+id/firstNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:hint="Enter firstname"
+                    android:inputType="textPersonName" />
+
+            <EditText
+                    android:id="@+id/lastNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter lastname"
+                    android:inputType="textPersonName" />
+
+
+            <EditText
+                    android:id="@+id/usernameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter UserName"
+                    android:inputType="textPersonName" />
+
+            <EditText
+                    android:id="@+id/passwordText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword" />
+
+            <EditText
+                    android:id="@+id/emailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress" />
+
+            <EditText
+                    android:id="@+id/addressText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter Street Address"
+                    android:inputType="textPostalAddress" />
+
+            <EditText
+                    android:id="@+id/cityText"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter City"
+                    android:inputType="textPersonName" />
+
+            <EditText
+                    android:id="@+id/stateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter State"
+                    android:inputType="textPersonName" />
+
+            <EditText
+                    android:id="@+id/zipcodeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter Zipcode"
+                    android:inputType="number" />
+
+            <EditText
+                    android:id="@+id/phoneText"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter phone number"
+                    android:inputType="phone" />
+
+            <EditText
+                    android:id="@+id/secquestionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter Security Question"
+                    android:inputType="textPersonName" />
+
+            <EditText
+                    android:id="@+id/secanswerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Enter Security Answer"
+                    android:inputType="textPersonName" />
+
+            <TextView
+                    android:id="@+id/select_operator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="     User Type"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Operator"
+                    android:textSize="20sp" />
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manager"
+                    android:textSize="20sp" />
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="User"
+                    android:textSize="20sp" />
+
+
+
+            </RadioGroup>
+            <Button
+                    android:id="@+id/submitbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="addRecord"
+                    android:text="Submit" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

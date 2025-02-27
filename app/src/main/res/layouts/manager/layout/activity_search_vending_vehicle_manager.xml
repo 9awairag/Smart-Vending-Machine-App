@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="190dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SearchVendingVehicleManager">
+
+        <TextView
+            android:id="@+id/locationidLabel"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Location Intersection:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleLabel" />
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="400dp"
+            android:layout_height="346dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goButton">
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack">
+
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_span="1"
+                    android:paddingTop="10dp"
+                    android:text="Vehicle"
+                    android:textColor="#fff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_span="1"
+                    android:paddingTop="10dp"
+                    android:text="Location Intersection"
+                    android:textColor="#fff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_span="1"
+                    android:paddingTop="10dp"
+                    android:text="Time Slot"
+                    android:textColor="#fff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_span="1"
+                    android:paddingTop="10dp"
+                    android:text="Operator Name"
+                    android:textColor="#fff"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:background="#ff0000" />
+
+            <!--<TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text=" Truck 1"
+                        android:textSize="12dp" />
+
+                <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:layout_gravity="center"
+                        android:text="Cooper &amp; UTA Blud"
+                        android:textSize="12dp" />
+
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text="14:00-16:00"
+                        android:layout_gravity="center"
+                        android:textSize="12dp" />
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text="Dominic"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        tools:ignore="RtlCompat" />
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text=" Cart 1"
+                        android:textSize="12dp" />
+
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text="S Oak &amp; UTA Blud"
+                        android:textSize="12dp" />
+
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text="10:00-13:00"
+                        android:textSize="12dp" />
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text="Jimmy"
+                        android:textSize="12dp" />
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text=" Cart 2"
+                        android:textSize="12dp" />
+
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text="Spaniolo &amp; W 1st"
+                        android:textSize="12dp" />
+
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text="17:00-19:00"
+                        android:textSize="12dp" />
+
+                <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:paddingTop="20dp"
+                        android:text="Mike"
+                        android:textSize="12dp" />
+            </TableRow>-->
+        </TableLayout>
+
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Search Vending Vehicle"
+            android:textAllCaps="true"
+            android:textColor="#009688"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:fontFamily="sans-serif-condensed-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:prompt="@string/country_prompt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintStart_toEndOf="@+id/locationidLabel"
+            app:layout_constraintTop_toBottomOf="@+id/titleLabel" />
+
+        <TextView
+            android:id="@+id/vehicleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Vehicle :"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationidLabel" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="109dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:prompt="@string/country_prompt1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toEndOf="@+id/vehicleLabel"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:onClick="searchVehicle"
+            android:text="Search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

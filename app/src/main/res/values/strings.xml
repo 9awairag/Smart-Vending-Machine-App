@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MVM</string>
+    <string name="country_prompt">Country</string>
+    <string name="country_prompt1">Country prompt1</string>
+    <string-array name="vehicle_name">
+        <item>Truck 1</item>
+        <item>Truck 2</item>
+        <item>Cart 1</item>
+        <item>Cart 2</item>
+        <item>Cart 3</item>
+        <item>Cart 4</item>
+        <item>Cart 5</item>
+    </string-array>
+
+    <string-array name="operator_name">
+        <item>Andy Oliver</item>
+        <item>Dominic Woods</item>
+        <item>William Stinson</item>
+        <item>Jimmy Wayne</item>
+        <item>Jacob Ross</item>
+        <item>Mike Watson</item>
+        <item>Louis Black</item>
+    </string-array>
+
+    <string-array name="location_name">
+        <item>Cooper &amp; UTA Blud</item>
+        <item>W Nedderman &amp; Greek Row</item>
+        <item>S Davis &amp; W Mitchell</item>
+        <item>Cooper &amp; W Mitchell</item>
+        <item>S Oak &amp; UTA Blud</item>
+        <item>Spaniolo &amp; W 1st</item>
+        <item>Spaniolo &amp; W Mitchell</item>
+        <item>S Center &amp; W Mitchell</item>
+    </string-array>
+</resources>
